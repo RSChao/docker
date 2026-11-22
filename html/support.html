@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<style>
+			body {
+				background-color: #ffffff
+				/*Añadir aquí un degradado en su lugar, cosa que el manco NO va a hacer*/
+			}
+
+			.header {
+				background-color: #4342c7
+			}
+
+			.header-text {
+				color: white
+			}
+
+			.secondary {
+				background-color: #000000
+			}
+		</style>
+	</head>
+	
+	<body>
+	<header>
+		<h1>Atención al cliente</h1>
+		<nav>
+			<a href="../index.html">Inicio</a>
+			<a href="about.html">Sobre Nosotros</a>
+			<a href="support.html">Contacto</a>
+			<a href="services.html">Servicios</a>
+			<a href="projects.html">Proyectos</a>
+			<a href="prices.html">Precios</a>
+		</nav>
+	</header>
+	
+		<div class="header">
+			<p class="header-text">Tangamandapio<br><br><br><br></p>
+		</div>
+	
+		<div class="secondary">
+			<p class="header-text">Tangamandapio<br><br><br><br></p>
+		</div>
+
+		<!--Formulario de contacto - el encargado de Bootstrap lo decorará y colocará en el lugar correspondiente-->
+
+
+		<form>
+			<label for="fname">Nombre:</label><br>
+			<input type="text" id="fname" name="fname" placeholder="Pedro"><br>
+			<label for="lname">Apellido:</label><br>
+			<input type="text" id="lname" name="lname" placeholder="Pérez Pérez"><br>
+			<label for="role">Puesto de trabajo:</label><br>
+			<input type="text" id="role" name="role" placeholder="Dept. de RR.PP."><br>
+			<label for="company">Empresa:</label><br>
+			<input type="text" id="company" name="company" placeholder="PerezPerezSA"><br>
+			<label for="mail">Correo electrónico:</label><br>
+			<input type="email" id="mail" name="mail" placeholder="pedroperez@perezperez.es"><br>
+			<label for="phone">Teléfono:</label><br>
+			<input type="text" id="phone" name="phone" placeholder="+34 123 45 67 89"><br><br>
+			<!--No sé cómo hacer el desplegable del país-->
+			<!--boton de confirmar-->
+			<input type="submit" value="Submit">
+		</form>
+	</body>
+
+</html>
