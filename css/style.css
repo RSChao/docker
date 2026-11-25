@@ -1,0 +1,47 @@
+.roboto-<uniquifier> {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+.lineal {
+	background: linear-gradient(to top, #000000, #2282e8, #ffffff);   
+	background-repeat: no-repeat;
+}
+
+.header {
+    background-image: url("../assets/img/banner.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+	min-height: 300px; 
+	font-family: "Roboto", sans-serif;
+}
+
+.header-text {
+    color: white;
+    font-family: "Roboto", sans-serif;
+}
+
+.secondary {
+	background-color: #000000; 
+}
+
+h1{
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+	font-size: 55px; 
+}
+
+.blue{
+	color: #0177ff;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+	font-size: 55px; 
+}
