@@ -175,3 +175,223 @@ h1 {
     font-size: 11px;
     text-align: right;
 }
+
+
+/* CABECERA DE CONTACTO */
+.header-contacto {
+    background-image: none;
+    background-color: #05285a;
+    min-height: 210px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.marca-contacto h1 {
+    font-size: 50px;
+    margin: 0;
+}
+
+.marca-contacto p {
+    color: #b4b4b4;
+    margin-top: 8px;
+}
+
+
+
+
+
+/* CONTENIDO DE CONTACTO */
+.contenido-contacto {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 65px;
+    padding: 65px 7%;
+    min-height: 660px;
+}
+
+/* TEXTO DE LA IZQUIERDA */
+.texto-contacto {
+    flex: 1;
+    padding-top: 25px;
+}
+
+.texto-contacto h2 {
+    font-size: 35px;
+    line-height: 1.12;
+    color: #05285a;
+    margin-bottom: 25px;
+}
+
+.texto-contacto p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #444;
+    margin-top: 0;
+}
+
+/* FORMULARIO */
+.formulario-contacto {
+    flex: 1.5;
+    max-width: 650px;
+    width: 100%;
+    margin-top: 145px;
+}
+
+/* FILAS DEL FORMULARIO */
+.campo-contacto {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 14px;
+}
+
+/* ETIQUETAS */
+.campo-contacto label {
+    width: 230px;
+    flex-shrink: 0;
+    text-align: right;
+    font-size: 20px;
+    font-weight: 700;
+    color: #898b86;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+/* CAMPOS DE TEXTO Y DESPLEGABLE */
+.campo-contacto input,
+.campo-contacto select {
+    flex: 1;
+    min-width: 0;
+    height: 48px;
+    padding: 10px 12px;
+    border: 2px solid #888;
+    border-radius: 0;
+    background-color: transparent;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    color: #888;
+}
+
+/* TEXTO DE LOS PLACEHOLDERS */
+.campo-contacto input::placeholder {
+    color: #b4b4b4;
+}
+
+/* EFECTO AL SELECCIONAR UN CAMPO */
+.campo-contacto input:focus,
+.campo-contacto select:focus {
+    outline: 2px solid #0177ff;
+    border-color: #0177ff;
+}
+
+/* TEXTO INFORMATIVO DE PRIVACIDAD */
+.privacidad-contacto {
+    margin: 12px 0 15px 240px;
+    font-size: 16px;
+    line-height: 1.4;
+    color: black;
+    text-align: justify;
+}
+
+.privacidad-contacto a {
+    color: #0177ff;
+    text-decoration: none;
+}
+
+.privacidad-contacto a:hover {
+    text-decoration: underline;
+}
+
+/* CASILLA DE ACEPTACIÓN */
+.aceptar-privacidad {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 0 0 30px 240px;
+    font-size: 14px;
+    color: black;
+}
+
+.aceptar-privacidad input {
+    cursor: pointer;
+    accent-color: #0177ff;
+}
+
+.aceptar-privacidad label {
+    cursor: pointer;
+}
+
+/* MÓVILES */
+@media (max-width: 768px) {
+    .privacidad-contacto {
+        margin-left: 0;
+    }
+
+    .aceptar-privacidad {
+        margin-left: 0;
+    }
+}
+
+/* BOTÓN DE CONTACTO */
+.boton-contacto {
+    display: block;
+    margin-left: auto;
+    background-color: #087bfa;
+    color: white;
+    border: none;
+    border-radius: 14px;
+    padding: 11px 32px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.boton-contacto:hover {
+    background-color: #0069df;
+}
+
+/* ADAPTACIÓN A MÓVILES */
+@media (max-width: 768px) {
+
+    .contenido-contacto {
+        flex-direction: column;
+        gap: 35px;
+        padding: 40px 7%;
+    }
+
+    .texto-contacto {
+        padding-top: 0;
+    }
+
+    .formulario-contacto {
+        max-width: 100%;
+        margin-top: 0;
+    }
+
+    .campo-contacto {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 5px;
+    }
+
+    .campo-contacto label {
+        width: 100%;
+        text-align: left;
+        font-size: 16px;
+    }
+
+    .campo-contacto input,
+    .campo-contacto select {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .privacidad-contacto {
+        margin-left: 0;
+    }
+}
+
+
