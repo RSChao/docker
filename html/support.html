@@ -1,98 +1,168 @@
+
 <!DOCTYPE html>
 <html lang="es">
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<style>
-			body {
-				background-color: #ffffff
-				/*Añadir aquí un degradado en su lugar, cosa que el manco NO va a hacer*/
-			}
 
-			.header {
-				background-color: #4342c7
-			}
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 
-			.header-text {
-				color: white
-			}
+		<link rel="stylesheet" href="../css/style.css">
 
-			.secondary {
-				background-color: #000000
-			}
-		</style>
+		<title>Contacto | NovaStack</title>
 	</head>
-	
+
 	<body>
-	<header>
-		<h1>Atención al cliente</h1>
-		<nav>
-			<a href="../index.html">Inicio</a>
-			<a href="about.html">Sobre Nosotros</a>
-			<a href="support.html">Contacto</a>
-			<a href="services.html">Servicios</a>
-			<a href="projects.html">Proyectos</a>
-			<a href="prices.html">Precios</a>
-		</nav>
-	</header>
-	
-		<div class="header">
-			<p class="header-text">Tangamandapio<br><br><br><br></p>
-		</div>
-	
-		<div class="secondary">
-			<p class="header-text">Tangamandapio<br><br><br><br></p>
-		</div>
 
-		<!--Formulario de contacto - el encargado de Bootstrap lo decorará y colocará en el lugar correspondiente-->
+	<div class="pagina">
 
+		<!-- CABECERA -->
+		<header class="header header-contacto">
+			<div class="marca-contacto">
+				<h1>NOVA<span class="blue">STACK</span></h1>
+				<p>Soluciones tecnológicas para tu empresa</p>
+			</div>
 
-		<form>
-			<label for="fname">Nombre:</label><br>
-			<input type="text" id="fname" name="fname" placeholder="Pedro"><br>
-			<label for="lname">Apellido:</label><br>
-			<input type="text" id="lname" name="lname" placeholder="Pérez Pérez"><br>
-			<label for="role">Puesto de trabajo:</label><br>
-			<input type="text" id="role" name="role" placeholder="Dept. de RR.PP."><br>
-			<label for="company">Empresa:</label><br>
-			<input type="text" id="company" name="company" placeholder="PerezPerezSA"><br>
-			<label for="mail">Correo electrónico:</label><br>
-			<input type="email" id="mail" name="mail" placeholder="pedroperez@perezperez.es"><br>
-			<label for="phone">Teléfono:</label><br>
-			<input type="text" id="phone" name="phone" placeholder="+34 123 45 67 89"><br><br>
-			<!--No sé cómo hacer el desplegable del país-->
-			<!--boton de confirmar-->
-			<input type="submit" value="Submit">
-		</form>
-		
-		
-		<footer>
-			<!--footer nav-->
 			<nav>
-				<li>
-					<p><b>Título</b></p>
-					<p><a href="">Tangamandapio</a>
-					<p><a href="">Tangamandapio</a>
-					<p><a href="">Tangamandapio</a>
-					<p><a href="">Tangamandapio</a>
-					<p><a href="">Tangamandapio</a>
-				</li>
+				<a href="../index.html">Inicio</a>
+				<a href="projects.html">Productos</a>
+				<a href="prices.html">Precios</a>
+				<a href="support.html">Contacto</a>
 			</nav>
-			<nav>
-				<li>
-					<p><b>Título</b></p>
-					<p><a href="">Tangamandapio</a>
-					<p><a href="">Tangamandapio</a>
-					<p><a href="">Tangamandapio</a>
-					<p><a href="">Tangamandapio</a>
-					<p><a href="">Tangamandapio</a>
-				</li>
-			</nav><br><br><br>
-			
-			<a href="mailto:support@novastack.com">support@novastack.com</a>
-			
-			<p style="text-align: right">&copy; 2026 NovaStack Inc. Todos los derechos reservados	<a href="html/ToS.html">Términos de uso</a>		<a href="html/PP.html">Política de privacidad</a></p>
-		</footer>
-	</body>
+		</header>
 
+		<!-- CONTENIDO PRINCIPAL -->
+		<main class="contenido-contacto">
+
+			<section class="texto-contacto">
+				<h2>Complete el formulario para ponerse en contacto con nuestro equipo</h2>
+
+				<p>
+					NovaStack ofrece la productividad y la colaboración en las que confían los desarrolladores, junto con la escala, la seguridad y el contenido de confianza que necesitan las empresas.  
+				</p>
+			</section>
+
+			<!-- FORMULARIO -->
+			<section class="formulario-contacto">
+				<form action="#" method="post">
+
+					<div class="fila-formulario">
+						<div class="campo-contacto">
+							<label for="nombre">Nombre:</label>
+							<input type="text" id="nombre" name="nombre"
+								   placeholder="Nombre" required>
+						</div>
+
+						<div class="campo-contacto">
+							<label for="apellidos">Apellidos:</label>
+							<input type="text" id="apellidos" name="apellidos"
+								   placeholder="Apellidos" required>
+						</div>
+					</div>
+
+					<div class="campo-contacto">
+						<label for="puesto">Puesto de trabajo:</label>
+						<input type="text" id="puesto" name="puesto"
+							   placeholder="Puesto de trabajo">
+					</div>
+
+					<div class="campo-contacto">
+						<label for="empresa">Compañía:</label>
+						<input type="text" id="empresa" name="empresa"
+							   placeholder="Nombre de su empresa">
+					</div>
+
+					<div class="campo-contacto">
+						<label for="email">Email:</label>
+						<input type="email" id="email" name="email"
+							   placeholder="correo@empresa.com" required>
+					</div>
+
+					<div class="campo-contacto">
+						<label for="telefono">Número de teléfono:</label>
+						<input type="tel" id="telefono" name="telefono"
+							   placeholder="+34 123 45 67 89">
+					</div>
+
+					<div class="campo-contacto">
+						<label for="pais">País:</label>
+						<select id="pais" name="pais" required>
+							<option value="">Seleccione País...</option>
+							<option value="España">España</option>
+							<option value="Francia">Francia</option>
+							<option value="Portugal">Portugal</option>
+							<option value="Italia">Italia</option>
+							<option value="Alemania">Alemania</option>
+							<option value="Otro">Otro</option>
+						</select>
+					</div>
+
+					<p class="privacidad-contacto">
+						Al compartir mi información de contacto, autorizo a NovaStack a ponerse en
+						contacto conmigo para informarme sobre sus productos y servicios. Consulte
+						nuestra <a href="PP.html">Política de Privacidad</a> para ver más información.
+					</p>
+					<div class="aceptar-privacidad">
+						<input type="checkbox" id="privacidad" name="privacidad" required>
+						<label for="privacidad">
+							He leído y acepto la política de privacidad.
+						</label>
+					</div>
+
+					<button type="submit" class="boton-contacto">
+						Contacta
+					</button>
+
+				</form>
+			</section>
+
+		</main>
+
+		<!-- FOOTER -->
+			<footer class="footer">
+
+				<!-- COLUMNA PRODUCTOS -->
+				<nav>
+					<ul>
+						<li><b>Productos</b></li>
+						<li><a href="html/projects.html">Entornos de pruebas</a></li>
+						<li><a href="html/projects.html">Gobernanza de la IA</a></li>
+						<li><a href="html/projects.html">Enterprise Gateway</a></li>
+					</ul>
+				</nav>
+
+
+				<!-- COLUMNA PRECIOS -->
+				<nav>
+					<ul>
+						<li><b>Precios</b></li>
+						<li><a href="html/prices.html">Mensual</a></li>
+						<li><a href="html/prices.html">Trimestral</a></li>
+						<li><a href="html/prices.html">Anual</a></li>
+					</ul>
+				</nav>
+
+
+				<!-- PARTE INFERIOR DEL FOOTER -->
+				<div class="footer-bottom">
+
+					<a href="mailto:support@novastack.com">
+						support@novastack.com
+					</a>
+
+					<p>
+						&copy; 2026 NovaStack Inc. Todos los derechos reservados
+						<a href="html/ToS.html">Términos de uso</a>
+						<a href="html/PP.html">Política de privacidad</a>
+					</p>
+
+				</div>
+
+			</footer>
+
+	</div>
+
+	</body>
 </html>
