@@ -134,59 +134,125 @@
 			<section class="container my-5">
 				<div class="row align-items-center">
 
+					<!-- TEXTO DESPLEGABLE -->
 					<div class="col-md-6">
 						<p class="m-0">Desbloquea la seguridad</p>
 						<h2 class="fw-bold">Autonomía</h2>
-						<ul class="list-unstyled">
-							<li class="border-bottom border-dark">Autonomía de confianza</li>
-							<li class="border-bottom border-dark">Envío más rápido. Sin brechas.</li>
-							<li>Cumple por defecto.</li>
-						</ul>
+
+						<div class="accordion accordion-flush" id="acordeonAutonomia">
+
+							<!-- OPCIÓN 1 -->
+							<div class="accordion-item">
+								<h3 class="accordion-header">
+									<button class="accordion-button collapsed" type="button"
+										data-bs-toggle="collapse"
+										data-bs-target="#autonomiaUno"
+										aria-expanded="false"
+										aria-controls="autonomiaUno">
+										Autonomía de confianza
+									</button>
+								</h3>
+
+								<div id="autonomiaUno" class="accordion-collapse collapse"
+									data-bs-parent="#acordeonAutonomia">
+									<div class="accordion-body">
+										Permite gestionar los contenedores de forma independiente,
+										manteniendo el control y la seguridad de tus aplicaciones.
+									</div>
+								</div>
+							</div>
+
+							<!-- OPCIÓN 2 -->
+							<div class="accordion-item">
+								<h3 class="accordion-header">
+									<button class="accordion-button collapsed" type="button"
+										data-bs-toggle="collapse"
+										data-bs-target="#autonomiaDos"
+										aria-expanded="false"
+										aria-controls="autonomiaDos">
+										Envío más rápido. Sin brechas.
+									</button>
+								</h3>
+
+								<div id="autonomiaDos" class="accordion-collapse collapse"
+									data-bs-parent="#acordeonAutonomia">
+									<div class="accordion-body">
+										Agiliza el envío de aplicaciones y facilita mantener
+										un entorno de trabajo seguro.
+									</div>
+								</div>
+							</div>
+
+							<!-- OPCIÓN 3 -->
+							<div class="accordion-item">
+								<h3 class="accordion-header">
+									<button class="accordion-button collapsed" type="button"
+										data-bs-toggle="collapse"
+										data-bs-target="#autonomiaTres"
+										aria-expanded="false"
+										aria-controls="autonomiaTres">
+										Cumple por defecto.
+									</button>
+								</h3>
+
+								<div id="autonomiaTres" class="accordion-collapse collapse"
+									data-bs-parent="#acordeonAutonomia">
+									<div class="accordion-body">
+										Facilita aplicar medidas de seguridad y mantener
+										las configuraciones necesarias desde el principio.
+									</div>
+								</div>
+							</div>
+
+						</div>
 					</div>
 
+					<!-- IMAGEN -->
 					<div class="col-md-6">
-						<img src="assets/img/autonomia.png" class="img-fluid rounded-5" alt="Una mano robótica y una mano humana encajando piezas de puzle">
+						<img src="assets/img/autonomia.png"
+							class="img-fluid rounded-5"
+							alt="Una mano robótica y una mano humana encajando piezas de puzle">
 					</div>
 
 				</div>
 			</section>
 
 			<!--Información escrita en html puro. Julia y javi, I choose you!-->
-			<section class="container my-5">
-				<div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-3">
+			<section class="container mt-5 mb-5 pb-5">
+				<div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4">
 
 					<div class="col">
-						<div class="card h-100 bg-black text-white text-center rounded-4">
+						<div class="card bg-black text-white text-center rounded-4 caracteristica">
 							<div class="card-body">
-								<h3 class="card-title h4 fw-bold">Ligereza</h3>
+								<h3 class="card-title fw-bold">Ligereza</h3>
 								<p class="card-text">Consumen poca memoria y disco. Arrancan en segundos.</p>
 							</div>
 						</div>
 					</div>
 
 					<div class="col">
-						<div class="card h-100 bg-black text-white text-center rounded-4">
+						<div class="card bg-black text-white text-center rounded-4 caracteristica">
 							<div class="card-body">
-								<h3 class="card-title h4 fw-bold">Portabilidad</h3>
-								<p class="card-text">Cada contenedor incluye código y librerías para evitar múltiples errores.</p>
+								<h3 class="card-title fw-bold">Portabilidad</h3>
+								<p class="card-text">Cada contenedor incluye el código y las librerías, esto evita fallos y errores.</p>
 							</div>
 						</div>
 					</div>
 
 					<div class="col">
-						<div class="card h-100 bg-black text-white text-center rounded-4">
+						<div class="card bg-black text-white text-center rounded-4 caracteristica">
 							<div class="card-body">
-								<h3 class="card-title h4 fw-bold">Escalabilidad</h3>
+								<h3 class="card-title fw-bold">Escalabilidad</h3>
 								<p class="card-text">Facilita dividir aplicaciones independientes por separado.</p>
 							</div>
 						</div>
 					</div>
 
 					<div class="col">
-						<div class="card h-100 bg-black text-white text-center rounded-4">
+						<div class="card bg-black text-white text-center rounded-4 caracteristica">
 							<div class="card-body">
-								<h3 class="card-title h4 fw-bold">Integración</h3>
-								<p class="card-text">Contienen servicios integrados para compartir imágenes y contenido.</p>
+								<h3 class="card-title fw-bold">Herramientas</h3>
+								<p class="card-text">Contienen distintos servicios integrados para compartir imágenes y contenido.</p>
 							</div>
 						</div>
 					</div>
