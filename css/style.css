@@ -30,6 +30,25 @@ body {
 
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
 }
+/* FLECHAS DEL CARRUSEL */
+.carousel-control-prev,
+.carousel-control-next {
+	opacity: 1;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+	background-color: #000;
+	border-radius: 50%;
+	background-size: 60%;
+	width: 2.5rem;
+	height: 2.5rem;
+}
+
+/* Evita que la tarjeta cambie de altura entre diapositivas */
+.carousel-item .row {
+	min-height: 250px;
+}
 
 /* CABECERA */
 .header {
@@ -394,4 +413,33 @@ h1 {
     }
 }
 
+/* CABECERA DE PRODUCTOS */
+.header-productos {
+	background-image: none;
+	background-color: #05285a;
+	min-height: 260px;
+	padding-top: 60px;
+}
 
+.header-productos p {
+	color: #b4b4b4;
+}
+/* TARJETA CREMA */
+.tarjeta-crema {
+	background-color: #f4f0e8;
+}
+
+/* CABECERA DE PRECIOS */
+.header-precios {
+	background-image: none;
+	background-color: #000;
+	min-height: 200px;
+}
+/* TARJETAS DE PLANES */
+.plan {
+	box-shadow: 8px 8px 0 #0177ff;
+}
+/* SOMBRA NEGRA DURA */
+.sombra-negra {
+	box-shadow: 8px 8px 0 #000;
+}
