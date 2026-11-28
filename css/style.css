@@ -131,6 +131,64 @@ h1 {
     color: #0177ff;
 }
 
+/* ACORDEÓN DE AUTONOMÍA */
+.accordion-item {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+.accordion-button {
+    background-color: transparent;
+    color: black;
+    padding: 5px 0;
+    font-size: 16px;
+    box-shadow: none;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: transparent;
+    color: black;
+    box-shadow: none;
+    font-weight: bold;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+}
+
+.accordion-body {
+    padding: 10px 0 15px;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+/* TARJETAS DE CARACTERÍSTICAS */
+.caracteristica {
+    height: 190px;
+    border-radius: 22px !important;
+}
+
+.caracteristica .card-body {
+    padding: 14px 22px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.caracteristica h3 {
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.caracteristica p {
+    font-size: 18px;
+    line-height: 1.4;
+    margin: 0;
+}
+
 /* FOOTER */
 .footer {
     background-color: black;
@@ -215,10 +273,6 @@ h1 {
     color: #b4b4b4;
     margin-top: 8px;
 }
-
-
-
-
 
 /* CONTENIDO DE CONTACTO */
 .contenido-contacto {
@@ -426,20 +480,183 @@ h1 {
 }
 /* TARJETA CREMA */
 .tarjeta-crema {
-	background-color: #f4f0e8;
+    background-color: #f4f0e8;
 }
 
 /* CABECERA DE PRECIOS */
 .header-precios {
-	background-image: none;
-	background-color: #000;
-	min-height: 200px;
+    background-image: none;
+    background-color: #000;
+    min-height: 200px;
 }
+
+/* CONTENEDOR DE PLANES */
+.planes .col {
+    display: flex;
+    justify-content: center;
+}
+
 /* TARJETAS DE PLANES */
 .plan {
-	box-shadow: 8px 8px 0 #0177ff;
+    width: 290px;
+    min-height: 520px;
+    box-shadow: 9px 9px 0 #0177ff;
+    border-radius: 25px !important;
 }
+
+/* CONTENIDO */
+.plan .card-body {
+    padding: 22px 18px;
+}
+
+/* TÍTULOS */
+.plan h2 {
+    font-size: 38px;
+    margin-bottom: 18px;
+}
+
+/* PRECIOS */
+.plan .card-body > p {
+    font-size: 34px;
+    margin-bottom: 20px;
+}
+
+/* BOTONES */
+.plan .btn {
+    font-size: 21px;
+    padding: 9px;
+    border-radius: 8px;
+}
+
+/* LISTAS */
+.plan ul {
+    font-size: 15px;
+    line-height: 1.45;
+    padding-left: 20px !important;
+}
+
 /* SOMBRA NEGRA DURA */
 .sombra-negra {
-	box-shadow: 8px 8px 0 #000;
+    box-shadow: 9px 9px 0 #000;
+}
+
+/* CARACTERÍSTICAS DEMO */
+/* TARJETA CREMA */
+.tarjeta-crema {
+    background-color: #f4f0e8;
+}
+
+/* TÍTULO DE LA SECCIÓN */
+.titulo-resumen {
+    max-width: 450px;
+    font-size: 34px;
+    line-height: 1.35;
+    margin-bottom: 30px;
+}
+
+/* TARJETAS */
+.tarjetas-resumen .card {
+    width: 100%;
+    max-width: 300px;
+    height: 280px;
+    margin: 0 auto;
+}
+
+/* CONTENIDO */
+.tarjetas-resumen .card-body {
+    padding: 22px 18px;
+}
+
+/* TEXTO SUPERIOR */
+.tarjetas-resumen .card-body > p:first-child {
+    font-size: 19px;
+    margin-bottom: 12px;
+}
+
+/* TÍTULOS */
+.tarjetas-resumen h3 {
+    font-size: 32px;
+    margin-bottom: 18px;
+}
+
+/* DESCRIPCIÓN */
+.tarjetas-resumen .card-body > p:last-child {
+    font-size: 23px;
+    margin-bottom: 0;
+}
+
+/* SOMBRA NEGRA */
+.sombra-negra {
+    box-shadow: 10px 10px 0 #000;
+}
+
+/* ESPACIO DEBAJO */
+.tarjetas-resumen {
+    padding-bottom: 80px;
+}
+
+/* SECCIÓN DE CONTACTO */
+.seccion-contacto {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 45px 20px;
+}
+
+.seccion-contacto h2 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.seccion-contacto p {
+    color: #b4b4b4;
+    font-size: 17px;
+    margin-bottom: 15px;
+}
+
+/* BOTONES */
+.botones-contacto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+}
+
+.boton-demo,
+.boton-contacta {
+    width: 110px;
+    height: 40px;
+    padding: 7px 10px;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    line-height: 1.1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boton-demo {
+    color: white;
+    border: 1px solid white;
+    background-color: transparent;
+}
+
+.boton-contacta {
+    color: white;
+    background-color: #087bfa;
+    border: 1px solid #087bfa;
+}
+
+.boton-demo:hover {
+    background-color: white;
+    color: black;
+}
+
+.boton-contacta:hover {
+    background-color: #0069df;
+    color: white;
 }
